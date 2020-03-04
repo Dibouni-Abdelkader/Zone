@@ -1,0 +1,1 @@
+{"C:\\Users\\2018\\website\\gulpfile.js":{"sha1":"6a2436f9739e51da93f8719ee0c25981cce2e057","tasks":{"html":{"name":"html","dependencies":""},"css":{"name":"css","dependencies":""},"js":{"name":"js","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"watch"}}}}

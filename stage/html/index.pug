@@ -1,0 +1,30 @@
+-var title = 'Zone Template'
+doctype html
+html(lang='en')
+	head
+		//- Include Meta Tags From meta.pug
+		include pug/includes/meta.pug
+
+		//- Title 
+		title= title
+
+		//- Include Styles From styles.pug
+		include pug/includes/styles.pug
+	body
+		//- Include Mixins
+		include pug/mixins/section-title.pug	
+		//- Include Components
+		include pug/components/packtop.pug
+		//- Include Sections From Layout
+		include pug/layout/navigation.pug
+		include pug/layout/hero.pug
+		include pug/layout/about.pug
+		include pug/layout/services.pug
+		include pug/layout/portfolio.pug
+		include pug/layout/blog.pug
+		include pug/layout/contact.pug
+		include pug/layout/footer.pug
+
+		//- Import Scripts From scripts.pug
+		include pug/includes/scripts.pug
+

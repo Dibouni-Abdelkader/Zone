@@ -1,0 +1,91 @@
+/* Start About Section */
+.about{
+	padding: $sec-padding;
+	color: $white-color;
+	background-color: $second-color;
+
+	.about-image{
+		margin-bottom: 20px;
+
+		img{
+
+			width: 100%;
+			box-shadow: -15px 15px 0 $first-color;
+		}
+
+	}
+	.about-title{
+		padding-bottom: 10px;
+
+		h4{
+			text-transform: capitalize;
+			color: $white-color;
+			font-size: 2.4rem;
+			padding-bottom: 10px;
+		}
+		p{
+			font-size: 15px;
+		}
+	}
+	.about-info{
+
+		p{
+
+			color: $theme-color;
+			text-transform: capitalize;
+			span{
+				color: $white-color;
+
+			}
+		}
+	}
+	.about-skills{
+		padding-bottom: 10px;
+
+		.progress-skill{
+			position:relative;
+			margin-bottom: 10px;
+
+			.progress-label{
+					text-transform: capitalize;
+					color: $white-color;
+					padding: 10px 0;
+				}
+
+
+			.progress-percent{
+
+				position: absolute;
+				bottom: 2px;
+				right: 4px;
+				color: $theme-color;
+				
+			}
+
+
+			.progress{
+				height: 2px;
+				color: $white-color;
+				.progress-par{
+					
+					background-color: $theme-color;
+				}
+		}
+
+
+		}
+	}
+	.about-link{
+		padding: 10px 0;
+		a{
+			
+			@extend %theme-button;
+			margin: 0 0 20px;
+			
+
+		}
+	}
+}
+
+
+/* End About Section */

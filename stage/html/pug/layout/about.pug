@@ -1,0 +1,65 @@
+// Start About Section
+section#about.smoth-section.about
+	//Section title
+	+sectionTitle("who we are",'about')
+	.container
+		.row
+			.col-12.col-md-5
+				.about-image
+					img(src='images/about/1.jpg' alt='')
+			.col-12.col-md-7
+				.about-title
+					.row
+						.col-md-12
+							h4 hi there
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nobis illum nemo saepe delectus assumenda tempore omnis quo quisquam obcaecati consectetur praesentium culpa animi, id ratione amet maxime, autem fugit?
+				.about-info
+					.row
+						.col-md-12
+							.row
+								.col-12.col-md-6
+									p name: 
+										span jhon doe
+									p phone: 
+										span  +1-250-4520
+
+								.col-12.col-md-6
+									p email: 
+										span jhondoe@company.com
+									p linkedin: 
+										span  jhonedoe125
+				.about-skills
+					.progress-skill
+						.progress-label Sass/Bug
+						.progress-percent 82%
+						.progress
+							div(data-value='82',style='width: 82%').progress-par
+
+
+					.progress-skill
+						.progress-label JQuery/Bootstrap 4
+						.progress-percent 65%
+						.progress
+							div(data-value='65', style='width: 65%').progress-par
+
+					.progress-skill
+						.progress-label JavaScript
+						.progress-percent 75%
+						.progress
+							div(data-value='75', style='width: 75%').progress-par
+
+					.progress-skill
+						.progress-label Python
+						.progress-percent 52%
+						.progress
+							div(data-value='52', style='width: 52%').progress-par
+
+
+					.progress-skill
+						.progress-label Gulp/Git
+						.progress-percent 48%
+						.progress
+							div(data-value='48', style='width: 48%').progress-par
+				.about-link
+					a(href='#') download cv
+// End About Section 

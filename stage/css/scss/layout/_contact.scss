@@ -1,0 +1,79 @@
+/* Start Contact Section */
+.contact{
+	padding:$sec-padding;
+	background-color: $second-color;
+
+
+	// Contact Box
+	.contact-box{
+		color: $white-color;
+		background-color: $first-color;
+		padding: 10px;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		.box-icon{
+
+			float: left;
+			padding: 10px 20px;
+
+			i{
+				font-size: 25px;
+			}
+			
+
+		}
+
+		.box-info{
+
+			float: left;
+			text-transform: capitalize;
+			color: $white-color;
+			h5{
+				font-size: 1.2rem;
+			}
+
+
+
+		}
+
+	}
+	// Overide Bootstrap Form Classes
+
+	.form-group{
+		margin-bottom:25px;
+	}
+
+	.form-control{
+
+		background-color: $first-color;
+		text-transform: capitalize;
+		font-size: 18px;
+		border: 0;
+		border-radius: 0;
+		outline:none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	textarea{
+
+		height: 280px;
+		resize: vertical;
+	}
+	input[type='text'],
+	input[type='email']{
+
+		height: 3.8rem;
+	}
+	button{
+
+		@extend %theme-button;
+		margin: 0 0 20px;
+
+
+
+	}
+
+}
+
+/* End Contact Section */

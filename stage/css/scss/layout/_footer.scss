@@ -1,0 +1,23 @@
+/* Start Footer */
+footer{
+  text-align: center;
+  text-transform: capitalize;
+  background-color: $first-color;
+  padding: 20px 0;
+  p{
+
+    font-size: 14px;
+    color: $white-color;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    span{
+
+      color: $theme-color;
+      font-size: 15px;
+    }
+  }
+}
+
+
+/* End Footer*/

@@ -1,0 +1,136 @@
+/* Start Hero Section */
+.hero {
+
+  position: relative;
+  background: url('../images/hero/hero.jpg') fixed no-repeat center center / cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .overlay {
+
+    @include overlay;
+    background-color: rgba($second-color, .8);
+  }
+
+  .intro {
+
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+
+
+    h4 {
+
+      color: $white-color;
+      text-transform: capitalize;
+      font-size: 1.7rem;
+      height: 25px;
+      span.typed{
+        color: $theme-color;
+      }
+      span.typed-cursor {
+          opacity: 1;
+          animation: blink .7s infinite;}
+
+      @keyframes blink {
+          0% {
+            opacity: 1
+          }
+
+          50% {
+            opacity: 0
+          }
+
+          100% {
+            opacity: 1
+          }};
+
+
+      @media(max-width: 575px) {
+
+        font-size: 1.4rem;
+      }
+
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      text-transform: capitalize;
+      color: $white-color;
+      margin: 0;
+
+      span {
+        color: $theme-color;
+
+      }
+
+      @media(max-width: 576px) {
+
+        font-size: 2.4rem;
+      }
+
+
+    }
+
+    .intro-button {
+      @extend %theme-button;
+      margin: 20px 0;
+    }
+
+
+  }
+
+  .social {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+
+    @media(max-width:992px) {
+
+      margin: auto;
+    }
+
+    .social-link {
+
+      text-decoration: none;
+      
+
+
+      i.icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.4rem;
+        text-align: center;
+        cursor: pointer;
+        @include Transition(all, .3s, ease);
+        color: $white-color;
+        background-color: $first-color;
+
+        &:hover {
+
+          background-color: $second-color;
+          color: $theme-color;
+          font-size: 1.5rem;
+        }
+
+
+
+      }
+    }
+
+  }
+}
+
+
+
+
+
+/* End Hero Section*/
